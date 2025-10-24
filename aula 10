@@ -1,0 +1,176 @@
+<<!DOCTYPE html> <!-- Define que o documento segue o padrão HTML5 -->
+<html lang="pt-br"> <!-- Informa que o idioma principal da página é português do Brasil -->
+
+<head> <!-- Cabeçalho do documento (metadados e links externos) -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres (UTF-8 suporta acentos e símbolos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsividade: adapta a largura à tela do dispositivo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza o carregamento de fontes externas -->
+    <title>Santos FC - Libertadores 1962</title> <!-- Título que aparece na aba do navegador -->
+
+    <!-- Importa o framework Bootstrap (estilos prontos e responsividade) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Importa os ícones do Bootstrap (ex.: ícones de redes sociais) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Importa o CSS próprio do projeto -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> <!-- Corpo visível da página -->
+    <!-- Cabeçalho principal -->
+    <header class="p-5"> <!-- Header com padding (espaçamento interno) -->
+
+        <!-- Barra de navegação -->
+        <nav class="container d-flex justify-content-between align-items-center">
+            <!-- Logo do site -->
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.santosfc.com.br%2F&psig=AOvVaw1m5wvwPmO3QdjO4kpm1Ode&ust=1760181571658000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNjcwLzBmZADFQAAAAAdAAAAABAE" class="nav-img" loading="lazy"> <!-- "loading=lazy" carrega a imagem apenas quando visível -->
+
+            <!-- Menu de navegação -->
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li> <!-- Link para a seção #inicio -->
+                <li class="nav-item"><a class="nav-link" href="#historia">História</a></li> <!-- Link para a seção #historia -->
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li> <!-- Link para a seção #galeria -->
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li> <!-- Link para a seção #contato -->
+            </ul>
+
+            <!-- Menu de acessibilidade -->
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <!-- Botão para abrir/fechar opções de acessibilidade -->
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">
+                    acessibilidade
+                </button>
+                <!-- Opções dentro do menu -->
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <!-- Botão para aumentar a fonte -->
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <!-- Botão para diminuir a fonte -->
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <!-- Botão para alternar contraste -->
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores">
+                        <i class="bi bi-shadows"></i> <!-- Ícone de contraste -->
+                    </button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5"> <!-- Main com margens verticais (my-5) -->
+
+        <!-- Seção inicial -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <!-- Texto e logo à esquerda -->
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas ao</h1> <!-- Título principal -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Santos_Logo.png/250px-Santos_Logo.png" class="mb-3" width="563" height="278" loading="lazy"> <!-- Logo principal -->
+                    <a href="#historia" class="btn btn-primary btn-lg botao-inicio fw-semibold">
+                        Quero saber mais!
+                    </a> <!-- Botão que leva para a seção História -->
+                </div>
+                <!-- Imagem de destaque à direita -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Santos_v_penarol_at_river.jpg" 
+                     alt="Jogadores do Santos FC comemorando a conquista da Taça Libertadores de 1962" 
+                     title="Santos FC - Libertadores 1962" 
+                     class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <!-- Seção explicativa sobre a Libertadores de 1962 -->
+        <section id="historia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a Libertadores de 1962">
+            <div class="container d-flex align-items-center">
+                <!-- Imagem da esquerda -->
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://cdn.conmebol.com/wp-content/uploads/2019/11/pele_16.jpg" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <!-- Texto da direita -->
+                <div class="col-5">
+                    <h2>A conquista da Taça Libertadores de 1962</h2>
+                    <p class="p-2">
+                        Em 1962, o Santos FC conquistou sua primeira Taça Libertadores da América, um dos maiores feitos da história do clube. 
+                        O time, liderado por Pelé, enfrentou o Peñarol na final, vencendo o jogo de volta por 3 a 0 no Maracanã e se consagrando campeão. 
+                        O Santos foi um dos times mais dominantes da época, com uma geração inesquecível que colocou o clube no topo do futebol mundial.
+                        <b>Fonte:</b> Site Oficial do Santos FC
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de galeria -->
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2> <!-- Título centralizado -->
+            <div class="container p-3 mt-3 fundo-galeria">
+                <!-- Primeira linha da galeria -->
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/jogadores_santos_1962.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/pelè_1962.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+                <!-- Segunda linha da galeria -->
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/santos_vitoria_1962.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/troféu_libertadores_1962.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <!-- Caixa do formulário -->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> 
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <!-- Campo Nome -->
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                   placeholder="Digite seu nome completo">
+                        </div>
+                        <!-- Campo Email -->
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                   placeholder="Digite seu email">
+                        </div>
+                        <!-- Campo Mensagem -->
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                      placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <!-- Botão Enviar -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                Enviar mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i> <!-- Ícone WhatsApp -->
+        <i class="bi bi-instagram"></i> <!-- Ícone Instagram -->
+        <i class="bi bi-tiktok"></i> <!-- Ícone TikTok -->
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script> <!-- Biblioteca para animações -->
+    <script src="script.js"></script> <!-- Script próprio do site -->
+  
+</body>
+</html>
